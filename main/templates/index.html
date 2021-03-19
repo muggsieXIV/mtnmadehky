@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- SITE TITTLE -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mtn Made Hky</title>
+	{% load static %}
+
+	<!-- PLUGINS CSS STYLE -->
+	<!-- Bootstrap -->
+	<link href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="{% static 'plugins/font-awsome/css/font-awesome.min.css' %}" rel="stylesheet">
+	<!-- Magnific Popup -->
+	<link href="{% static 'plugins/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+	<!-- Slick Carousel -->
+	<link href="{% static 'plugins/slick/slick.css' %}" rel="stylesheet">
+	<link href="{% static 'plugins/slick/slick-theme.css' %}" rel="stylesheet">
+	<!-- CUSTOM CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+	<!-- FAVICON -->
+	<link href="{% static 'images/mtn-made-favicon.png' %}" rel="shortcut icon">
+
+</head>
+
+<body class="body-wrapper">
+	<!--========================================
+	=            Navigation Section            =
+	=========================================-->
+	<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+		<div class="container-fluid p-0">
+			<!-- logo -->
+			<a class="navbar-brand" href="/">
+			<img src="{% static 'images/mtn-made-hky-logo.png' %}" alt="logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="fa fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav mx-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="/">Home
+				<span>/</span>
+				</a>
+			</li>
+			<li class="nav-item dropdown dropdown-slide">
+				<a class="nav-link" href="/news">News<span>/</span></a>
+			</li>
+			<li class="nav-item dropdown dropdown-slide">
+				<a class="nav-link" href="#" data-toggle="dropdown">At Home Training<span>/</span></a>
+				<!-- Dropdown list -->
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="/at-home-training">Start Here</a>
+					<a class="dropdown-item" href="/fullworkouts">Full Workouts</a>
+					<a class="dropdown-item" href="#">Shooting</a>
+					<a class="dropdown-item" href="#">Stick Handling</a>
+					<a class="dropdown-item" href="#">Agility</a>
+					<a class="dropdown-item" href="#">Lower Body Strength</a>
+					<a class="dropdown-item" href="#">Upper Body Strength</a>
+					<a class="dropdown-item" href="#">Core Strength</a>
+					<a class="dropdown-item" href="#">Conditioning</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/schedule">Schedule<span>/</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/programs">Programs<span></span></a>
+			</li>
+			</ul>
+			<a href="/contact" class="ticket">
+			<span>Contact Us</span>
+			</a>
+			</div>
+		</div>
+	</nav>
+
+	<!--============================
+	=            Banner            =
+	=============================-->
+
+	<section class="banner bg-banner-one">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="block">
+						<h1>Mtn Made Hky</h1>
+						<h2>Elite Training</h2>
+						<h6>We train today, to become champions tomorrow</h6>
+						<a href="/programs" class="btn btn-white-md">Current Programs</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	<!--====  End of Banner  ====-->
+	<section style="padding: 100px 0;" class="bg-banner-programs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 mx-auto">
+					<div class="text-center p-5 shadow rounded">
+						<h2 class="mb-3">Get in the action with Mtn Made Hky <span class="alternate">summer programs</span></h2>
+						<h4 class="mb-3">The off season is when champions are made</h4>
+						<h4>Our Programs</h4>
+						<ul class="list-unstyled mb-4">
+							<li>Teams</li>
+							<li>Training Camps</li>
+							<li>Private Lessons</li>
+						</ul>
+						<a href="/programs" target="_blank" class="btn btn-main">View Programs</a>			
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--===========================
+	=            About            =
+	============================-->
+
+	<section class="section about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 align-self-center">
+					<div class="image-block bg-about">
+						<img class="img-fluid" src="{% static 'images/speakers/mite-hky.jpg' %}" alt="">
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-6 align-self-center">
+					<div class="content-block">
+						<h2>About <span class="alternate">Mtn Made Hky</span></h2>
+						<div class="description-one">
+							<p>
+								Mountain Made Hky provides young athletes the opportunity to greatly improve their
+								skills through our on and off ice programs.  
+							</p>
+						</div>
+						<div class="description-two">
+							<p>
+								Using our professional experience and extensive knowledge of the game, 
+								we teach young athletes what is necessary for success at all levels of hockey.
+							</p>
+						</div>
+						<!-- <ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="/about-us" class="btn btn-main-md">Our Mission</a>
+							</li>
+							<!-- <li class="list-inline-item">
+								<a href="" class="btn btn-transparent-md">Our Staff</a>
+							</li> -->
+						<!-- </ul> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of About  ====-->
+
+	<!--==============================
+	=            Staff            =
+	===============================-->
+
+	<section class="section speakers bg-speaker overlay-lighter" id="staff">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- Section Title -->
+					<div class="section-title white">
+						<h3>Mtn Made Hky <span class="alternate">Staff</span></h3>
+						<p>
+							Elite coaches, from elite backgrounds.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<!-- Speaker 1 -->
+					<div class="speaker-item">
+						<div class="image">
+							<img src="{% static 'images/speakers/timKnox.jpg' %}" alt="speaker" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<h5>Contact Coach Knox </h5>
+								<ul class="list-inline ml-4">
+									<li class="list-inline-item"><a href="tel:970"><i class="fa fa-phone"></i></a></li>
+									<li class="list-inline-item"><a href="mailto:timpuck@aol.com"><i class="fa fa-envelope"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5>Tim Knox</h5>
+							<p>Co-Founder</p>
+							<br>
+							<p>
+								Coach Knox grew up playing hockey and soccer in Fargo, ND. After graduating highschool he enlisted into the Marine Corps. His time serving 
+								our nation taught Coach Knox a complete understanding in not only the value, but the wisdom to teach discipline, teamwork, workethic, 
+								attention to detail, and the need for continual improvement. 
+							</p>	
+							<br>
+							<p>
+								After retiring from the service, Coach Knox began his career as a hockey coach. His hockey knowledge, military values, and soccer influenced
+								off ice training, quickly proved to be successful for developing elite level athletes. 
+							</p>
+							<br>
+							<p>
+								After many seasons in North Dakota, Coach Knox relocated to Colorado were he developed the Renegades out of Fort Collins, CO. 
+								During the off seasons, Coach Knox ran summer camps in Omaha and Des Moines. After many successful seasons, Coach Knox merged the Renagades
+								with NCYH, where he'd coach before making a move down to Denver with Evolution AAA. Coach Knox has also coached the past two seasons at the 
+								U12 and U13 levels with the Roughriders AAA in Superior, CO.
+							</p>
+							<br>
+							<p>
+								Some of the elite players Coach Knox trained through the years are Tyler Pham, Jackson Barlent, CJ Smith, Patrick Grasso, Levi Webber, 
+								Lance Pennington, Aiden Thompson, Eric Brink, Lowden Houg, Collin Munson, Ben Walker, Jack Walker, and Sammy Walker.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<!-- Speaker 2 -->
+					<div class="speaker-item">
+						<div class="image">
+							<img src="{% static 'images/speakers/benwalkerhky.jpg' %}" alt="speaker" class="img-fluid">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<h5>Contact Coach Walker</h5>
+								<ul class="list-inline ml-2">
+									<li class="list-inline-item"><a href="tel:9523564014"><i class="fa fa-phone"></i></a></li>
+									<li class="list-inline-item"><a href="mailto:ben@mtnmadehky.com"><i class="fa fa-envelope"></i></a></li>
+									<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/benwillwalk"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5>Ben Walker</h5>
+							<p>Co-Founder</p>
+							<br>
+							<p>
+								Ben is a retired Professional Hockey Player from Fargo, ND. He moved to Edina, MN at the age of seven where he grew up skating 
+								under the Minnesota Made Hockey program run by Bernie McBain. While playing for the Edina Hornets High School team his team won
+								the state tournament in 2010. As a Senior, Ben moved to Victoria as a high school senior to join the Victoria Royals of the Western
+								Hockey League. After three seasons in the (WHL) Ben was named Fan Favorite and received the Unsung Hero Award. Ben then signed a 
+								contract with the Winnipeg Jet's (AHL) affiliate the St. John's IceCaps. He re-located with the team to Winnipeg which became the
+								Manitoba Moose, while also spending time with the Tulsa Oilers of the (ECHL). He then made a move to the Czech Republic where 
+								he signed with CEZ Motor Ceske Budejovice, before completing his career in Germany with EHC Freiburg.
+							</p>
+							<br>
+							<p>
+								In the off-seasons, Ben worked as an on ice coach with Minnesota Made Hockey in Edina, MN and a skills and fitness trainer at
+								First Athlete in Edina, MN. Ben moved to CO in 2018, determined to teach young athletes his gained knowledge of the game. His 
+								goal is to provide young athletes on-ice training in skating, shooting, puck handling, and game awareness. He wants to use his 
+								experience to also provide athletes the crucial off-ice training needed to reach elite levels and play in junior, NCAA, and 
+								professional leagues. Ben has also assisted with the Rocky Mountain Roughriders AAA at the U12 and U16 (Colorado State Champions 2020) levels. 
+							</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Speakers  ====-->
+
+	<!--==============================
+	=            Schedule            =
+	===============================-->
+
+	<section class="section schedule">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h3>Event <span class="alternate">Schedule</span></h3>
+						<p>Check out our upcoming events!</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="schedule-tab">
+						<ul class="nav nav-pills text-center">
+						<li class="nav-item">
+							<a class="nav-link active" href="#nov20" data-toggle="pill">
+								This month
+								<span>March 2021</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#nov21" data-toggle="pill">
+								Next month
+								<span>April 2021</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#nov22" data-toggle="pill">
+								Summer
+								<span>May-July 2021</span>
+							</a>
+						</li>
+						</ul>
+					</div>
+					<div class="schedule-contents bg-schedule">
+						<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active schedule-item" id="nov20">
+							<!-- Headings -->
+							<ul class="m-0 p-0">
+								<li class="headings">
+									<div class="date">Date</div>
+									<div class="time">Time</div>
+									<div class="speaker">Coach</div>
+									<div class="subject">Event</div>
+									<div class="venue">Location</div>
+								</li>
+								<!-- Schedule Details -->
+								<!-- <li class="schedule-details">
+									<div class="block"> -->
+										<!-- date -->
+										<!-- <div class="date">
+											<i class="fa fa-calendar"></i>
+											<span class="date">3/14/2021</span>
+										</div> -->
+										<!-- time -->
+										<!-- <div class="time">
+											<i class="fa fa-clock-o"></i>
+											<span class="time">6.00 AM</span>
+										</div> -->
+										<!-- Speaker -->
+										<!-- <div class="speaker"> -->
+											<!-- <img class="coach-thumb-img" src="{% static 'images/speakers/coachThumbNail-TimKnox.png' %}" alt="speaker-thumb-six"> -->
+											<!-- <span class="name">Knox</span>
+										</div> -->
+										<!-- Subject -->
+										<!-- <div class="subject">Available Private Session</div> -->
+										<!-- Venue -->
+										<!-- <div class="venue">Big Bear</div> -->
+									<!-- </div> -->
+									<li class="schedule-details">
+										<div class="block">
+											<div class="no-events">No Events Scheduled</div>
+										</div>
+									</li>
+								</li>
+							</ul>
+						</div>
+
+
+						<div class="tab-pane fade schedule-item" id="nov21">
+							<!-- Headings -->
+							<ul class="m-0 p-0">
+								<li class="headings">
+									<div class="time">Time</div>
+									<div class="speaker">Speaker</div>
+									<div class="subject">Subject</div>
+									<div class="venue">Venue</div>
+								</li>
+								<!-- Schedule Details -->
+								<!-- <li class="schedule-details">
+									<div class="block"> -->
+										<!-- time -->
+										<!-- <div class="time">
+											<i class="fa fa-clock-o"></i>
+											<span class="time">9.00 AM</span>
+										</div> -->
+										<!-- Speaker -->
+										<!-- <div class="speaker">
+											<img src="{% static 'images/speakers/speaker-thumb-one.jpg' %}" alt="speaker-thumb-one">
+											<span class="name">Samanta Doe</span>
+										</div> -->
+										<!-- Subject -->
+										<!-- <div class="subject">Introduction to Wp</div> -->
+										<!-- Venue -->
+										<!-- <div class="venue">Auditorium A</div> -->
+									<!-- </div>
+								</li> -->
+								<li class="schedule-details">
+									<div class="block">
+										<div class="no-events">No Events Scheduled</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade schedule-item" id="nov22">
+							<!-- Headings -->
+							<ul class="m-0 p-0">
+								<li class="headings">
+									<div class="time">Time</div>
+									<div class="speaker">Speaker</div>
+									<div class="subject">Subject</div>
+									<div class="venue">Venue</div>
+								</li>
+								<!-- Schedule Details -->
+								<li class="schedule-details">
+									<div class="block">
+										<div class="no-events">No Events Scheduled</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Schedule  ====-->
+
+	<!--==================================
+	=            Registration            =
+	===================================-->
+
+	<section class="registration">
+		<div class="container-fuild p-0">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 p-0">
+					<div class="service-block bg-service overlay-primary text-center">
+						<div class="row no-gutters">
+							<div class="col-6">
+								<!-- Service item -->
+								<div class="service-item">
+									<h5>Teams</h5>
+								</div>
+							</div>
+							<div class="col-6">
+								<!-- Service item -->
+								<div class="service-item">
+									<h5>Off Ice Training</h5>
+								</div>
+							</div>
+							<div class="col-6">
+								<!-- Service item -->
+								<div class="service-item">
+									<h5>Training Camps</h5>
+								</div>
+							</div>
+							<div class="col-6">
+								<!-- Service item -->
+								<div class="service-item">
+									<h5>Private Sessions</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 p-0">
+					<div class="registration-block bg-registration overlay-dark">
+						<div class="block">
+							<div class="title text-left">
+								<h3>Subscribe to <span class="alternate">Mtn Made</span></h3>
+								<p>Sign up for our email list today and stay up to date with our programs!</p>
+							</div>
+							<form action="/subscriber" class="row" method="POST">
+								{% csrf_token %}
+								<div class="col-md-6">
+									<input type="text" class="form-control main" placeholder="First Name" name="first_name">
+								</div>
+								<div class="col-md-6">
+									<input type="text" class="form-control main" placeholder="Last Name" name="last_name">
+								</div>
+								<div class="col-md-6">
+									<input type="email" class="form-control main" placeholder="Email" name="email">
+								</div>
+								<div class="col-md-6">
+									<!-- <div class="form-group">
+										<select class="form-control main" id="select-ticket" name="ath_age">
+											<option>Ticket Type</option>
+											<option value="u8">u08</option>
+											<option value="u10">u10</option>
+											<option value="u12">u12</option>
+											<option value="u14">u14</option>
+											<option value="u16">u16</option>
+											<option value="u18">u18</option>
+										</select>
+									</div> -->
+									<input type="text" class="form-control main" placeholder="Phone" name="phone">
+								</div>
+								<div class="col-12">
+									<button type="submit" class="btn btn-white-md">Register Now</button>
+								</div>
+								{% if messages %}
+									<div class="messages">
+										{% for message in meesages %}
+											<p>{{ message }}</p>
+										{% endfor %}
+									</div>
+								{% endif %} 
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Registration  ====-->
+
+
+	<!--===================================
+	=            Pricing Table            =
+	====================================-->
+
+	<section class="section pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h3>At Home <span class="alternate">training</span></h3>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<!-- Pricing Item -->
+					<div class="pricing-item">
+						<div class="pricing-heading">
+							<!-- Title -->
+							<div class="title">
+								<h6>Flexibility / Mobility</h6>
+							</div>
+							<!-- Price -->
+							<div class="price">
+								<h2>33<span>%</span></h2>
+								<p>Warmups, | Cooldowns | Exersizes</p>
+							</div>
+						</div>
+						<div class="pricing-body">
+							<!-- Feature List -->
+							<ul class="feature-list m-0 p-0">
+								<li><p><span class="fa fa-check-circle available"></span>Recover faster</p></li>
+								<li><p><span class="fa fa-check-circle available"></span>Prevent and rehabilitate injuries</p></li>
+								<li><p><span class="fa fa-check-circle available"></span>Improve strength</p></li>
+								<li><p><span class="fa fa-check-circle available"></span>Maximize mobility range</p></li>
+							</ul>
+						</div>
+						<div class="pricing-footer text-center">
+							<a href="/at-home-training" class="btn btn-transparent-md">At Home Training</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<!-- Pricing Item -->
+					<div class="pricing-item featured">
+						<div class="pricing-heading">
+							<!-- Title -->
+							<div class="title">
+								<h6>Stick Handling</h6>
+							</div>
+							<!-- Price -->
+							<div class="price">
+								<h2>33<span>%</span></h2>
+								<p>Shooting | Passing | Puck-handling</p>
+							</div>
+						</div>
+						<div class="pricing-body">
+							<!-- Feature List -->
+							<ul class="feature-list m-0 p-0">
+								<li><p><span class="fa fa-check-circle available"></span>Broken down fundamentals</p></li>
+								<li><p><span class="fa fa-check-circle available"></span>Dekes and Moves</p></li>
+								<li><p><span class="fa fa-check-circle available"></span>Shooting/Passing Excersizes</p></li>
+								<li><p><span class="fa fa-check-circle available"></span>Hand-Eye Coordination</p></li>
+							</ul>
+						</div>
+						<div class="pricing-footer text-center">
+							<a href="/at-home-training" class="btn btn-main-md">At Home Training</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 m-auto">
+					<!-- Pricing Item -->
+					<div class="pricing-item">
+						<div class="pricing-heading">
+							<!-- Title -->
+							<div class="title">
+								<h6>Workouts</h6>
+							</div>
+							<!-- Price -->
+							<div class="price">
+								<h2>33<span>%</span></h2>
+								<p>Conditioning | Agility | Strength</p>
+							</div>
+						</div>
+						<div class="pricing-body">
+							<!-- Feature List -->
+							<ul class="feature-list m-0 p-0">
+								<li><p><span class="fa fa-check-circle available"></span>1 Comfortable Seats</p></li>
+								<li><p><span class="fa fa-check-circle available"></span>Free Lunch and Coffee</p></li>
+								<li><p><span class="fa fa-check-circle available"></span>Certificate</p></li>
+								<li><p><span class="fa fa-check-circle available"></span>Easy Access</p></li>
+							</ul>
+						</div>
+						<div class="pricing-footer text-center">
+							<a href="/at-home-training" class="btn btn-transparent-md">At Home Training</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Pricing Table  ====-->
+
+
+	<!--===========================================
+	=            Call to Action Ticket            =
+	============================================-->
+
+	<section class="cta-ticket bg-ticket overlay-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<!-- Get ticket info -->
+					<div class="content-block">
+						<h2>Mtn Made <span class="alternate">Store</span></h2>
+						<p>Your source for training wear and timeless memorabilia</p>
+						<a href="#" class="btn btn-main-md">Remodeling</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="image-block"><img src="{% static 'images/background/timKnoxCard.jpg' %}" alt="" class="img-fluid"></div>
+	</section>
+
+	<!--====  End of Call to Action Ticket  ====-->
+
+
+	<!--================================
+	=            News Posts            =
+	=================================-->
+
+	<section class="news section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h3>Mtn Made Hky <span class="alternate">News</span></h3>
+						<p>Stay up to date with all our program updates and news letters!</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+					<div class="blog-post">
+						<div class="post-thumb">
+							<a href="news-single.html">
+								<img src="{% static 'images/news/mtnmade-mtn-bg.png' %}" alt="post-image" class="img-fluid">
+							</a>
+						</div>
+						<div class="post-content">
+							<div class="date">
+								<h4>New<span>2021</span></h4>
+							</div>
+							<div class="post-title">
+								<h2><a href="news-single.html">Full at home training program released!</a></h2>
+							</div>
+							<div class="post-meta">
+								<!-- <ul class="list-inline">
+									<li class="list-inline-item">
+										<i class="fa fa-user-o"></i>
+										<a href="#">Mtn Made</a>
+									</li>
+									<li class="list-inline-item">
+										<i class="fa fa-heart-o"></i>
+										<a href="#">350</a>
+									</li>
+									<li class="list-inline-item">
+										<i class="fa fa-comments-o"></i>
+										<a href="#">30</a>
+									</li>
+								</ul> -->
+								<a href="" class="btn btn-main">View</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 m-md-auto col-sm-8 col-10 m-auto">
+					<div class="blog-post">
+						<div class="post-thumb">
+							<a target="_blank" href="news-single.html">
+								<img src="{% static 'images/news/sammyw-b10champs.png' %}" alt="post-image" class="img-fluid">
+							</a>
+						</div>
+						<div class="post-content">
+							<div class="date">
+								<h4>2021<span>Big10</span></h4>
+							</div>
+							<div class="post-title">
+								<h2><a href="news-single.html">Sammy Walker (brother of Coach Ben) and the UofMn Win the Big10. </a></h2>
+							</div>
+							<div class="post-meta">
+								<a target="_blank" class="btn btn-main" href="https://bigten.org/sports/2021/3/10/2021HKYTournament.aspx">See Bracket</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+					<div class="blog-post">
+						<div class="post-thumb">
+								<img src="{% static 'images/news/dubnetwork.jpg' %}" alt="post-image" class="img-fluid">
+						</div>
+						<div class="post-content">
+							<div class="date">
+								<h4>Jan<span>2019</span></h4>
+							</div>
+							<div class="post-title">
+								<h2><a href="news-single.html">Why the Western Hockey League? - article writen by Ben Walker</a></h2>
+							</div>
+							<div class="post-meta">
+								<!-- <ul class="list-inline">
+									<li class="list-inline-item">
+										<i class="fa fa-user-o"></i>
+										<a href="#">Admin</a>
+									</li>
+									<li class="list-inline-item">
+										<i class="fa fa-heart-o"></i>
+										<a href="#">350</a>
+									</li>
+									<li class="list-inline-item">
+										<i class="fa fa-comments-o"></i>
+										<a href="#">30</a>
+									</li>
+								</ul> -->
+								<a target="_blank" href="https://www.dubnetwork.ca/alumni-feature/why-the-western-hockey-league/" class="btn btn-main">View</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of News Posts  ====-->
+
+
+
+	<!--==============================================
+	=            Call to Action Subscribe            =
+	===============================================-->
+
+	<section class="cta-subscribe bg-subscribe overlay-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 mr-auto">
+					<!-- Subscribe Content -->
+					<div class="content">
+						<h3>Subscribe to Our <span class="alternate">Newsletter</span></h3>
+						<p>
+							Stay up to date with important Mtn Made Hky developments
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 ml-auto align-self-center">
+					<!-- Subscription form -->
+					<form action="/news-subscriber-hp" class="row" method="POST">
+						{% csrf_token %}
+						<div class="col-lg-8 col-md-12">
+							<input type="email" class="form-control main white mb-lg-0" placeholder="Email" name="email">
+						</div>
+						<div class="col-lg-4 col-md-12">
+							<div class="subscribe-button">
+								<button class="btn btn-main-md">Subscribe</button>
+							</div>
+						</div>
+						{% if messages %}
+						<div class="messages">
+							{% for message in messages %} 
+								<p>{{ message }}</p>
+							{% endfor %}
+						</div>
+						{% endif %}
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Call to Action Subscribe  ====-->
+
+	<!--============================
+	=            Footer            =
+	=============================-->
+
+	<footer class="footer-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block text-center">
+						<div class="footer-logo">
+						<img src="{% static 'images/mmh-logo-w.png' %}" alt="logo" class="img-fluid">
+						</div>
+						<!-- <ul class="social-links-footer list-inline">
+						<li class="list-inline-item">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#"><i class="fa fa-instagram"></i></a>
+						</li>
+						
+						</ul> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Subfooter -->
+	<footer class="subfooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 align-self-center">
+					<div class="copyright-text">
+					<p><a href="/">Mtn Made Hky</a> developed by <span><a href="http://www.benwillwalk.com">BenWillWalk Dev</a></span></p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- JAVASCRIPTS -->
+	<!-- jQuey -->
+	<script src="{% static 'plugins/jquery/jquery.js' %}"></script>
+	<!-- Popper js -->
+	<script src="{% static 'plugins/popper/popper.min.js' %}"></script>
+	<!-- Bootstrap 4 -->
+	<script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+	<!-- Smooth Scroll -->
+	<script src="{% static 'plugins/smoothscroll/SmoothScroll.min.js' %}"></script>  
+	<!-- Isotope -->
+	<script src="{% static 'plugins/isotope/mixitup.min.js' %}"></script>  
+	<!-- Magnific Popup -->
+	<script src="{% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+	<!-- Slick Carousel -->
+	<script src="{% static 'plugins/slick/slick.min.js' %}"></script>  
+	<!-- SyoTimer -->
+	<script src="{% static 'plugins/syotimer/jquery.syotimer.min.js' %}"></script>
+	<!-- Google Mapl -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+	<script type="text/javascript" src="{% static 'plugins/google-map/gmap.js' %}"></script>
+	<!-- Custom Script -->
+	<script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>
