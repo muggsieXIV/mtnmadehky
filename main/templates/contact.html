@@ -121,17 +121,27 @@
 			</div>
 		</div>
 		<form action="/contact-us" class="row" method="POST">
-      {% csrf_token %}
+      		{% csrf_token %}
 			<div class="col-md-6">
-				<input type="text" class="form-control main" name="name" id="name" placeholder="Full Name">
+				<label for="name">Full Name: 
+				{% if 'name' in messages %} 
+					<span id="error-name">
+						{{ message }} 
+					</span>
+				{% endif %}
+				</label>
+				<input type="name" class="form-control main" name="name" id="name" placeholder="Full Name">
 			</div>
 			<div class="col-md-6">
+				<label for="email">Email: <span id="error-email"></span></label>
 				<input type="email" class="form-control main" name="email" id="email" placeholder="Email">
 			</div>
 			<div class="col-md-12">
+				<label for="phone">Phone: <span id="error-phone"></span></label>
 				<input type="text" class="form-control main" name="phone" id="phone" placeholder="Phone">
 			</div>
 			<div class="col-md-12">
+				<label for="first_name">Message: <span id="error-message"></span></label>
 				<textarea name="message" id="message" class="form-control main" rows="10" placeholder="Your Message"></textarea>
 			</div>
 			<div class="col-12 text-center">

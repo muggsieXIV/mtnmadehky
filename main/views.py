@@ -93,6 +93,7 @@ def newsSubscriber(request):
     )
     return redirect('/news')
 
+
 def newsSubscriberHP(request):
     errors = NewsLetterSubscriber.objects.nl_subscriber_validator(request.POST)
     if len(errors) > 0:
